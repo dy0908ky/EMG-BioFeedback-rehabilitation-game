@@ -50,7 +50,7 @@
   <tr>
     <td align="center">
       <b>1-Minute Project Summary</b><br>
-      <sub>회로 구현부터 OLED 기반 biofeedback game 동작까지 전체 프로젝트를 약 1분으로 정리한 쇼츠 영상</sub><br><br>
+      <sub>전체 프로젝트를 소개하는 1분 내외 쇼츠 영상</sub><br><br>
       <a href="https://youtu.be/JHu4KMJLgVw">▶ Watch Project Demo</a>
     </td>
     <td align="center">
