@@ -2,12 +2,22 @@
 
 > **Surface EMG-based gamified biofeedback system using an analog front-end, Arduino Uno, OLED, and LEDs**
 
-근활성도(EMG)를 실시간으로 측정하고 사용자의 기준 근수축(reference contraction)과 비교하여, OLED 캐릭터가 계단을 오르내리는 형태로 피드백을 제공하는 바이오피드백 시스템입니다. 단순 수치 표시 대신 **게임형 시각 피드백**을 적용해 사용자가 자신의 근수축 수준을 직관적으로 인지하도록 설계했습니다.
+근활성도(EMG)를 실시간으로 측정하고 사용자의 기준 근수축(reference contraction)과 비교하여, OLED 캐릭터가 계단을 오르내리는 형태로 피드백을 제공하는 바이오피드백 시스템입니다. 기존 재활 운동과의 차별을 위해, 단순 수치 표시 대신 **게임형 시각 피드백**을 적용해 사용자가 자신의 근수축 수준을 직관적으로 인지하도록 설계했습니다.
 
-<p align="center">
-  <img src="media/system_setup_01.jpg" width="46%" />
-  <img src="media/perfboard_front.jpg" width="46%" />
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/eb53b4df-1f67-4239-b820-923d13004146" alt="Final_perfboard" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/0d7a2911-2539-444d-af6c-ec06559b6974" alt="system_setup_02" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Perfboard-based analog circuit implementation</sub></td>
+    <td align="center"><sub>Integrated system setup with Arduino, OLED, and EMG circuit</sub></td>
+  </tr>
+</table>
 
 ## Project Highlights
 
@@ -40,9 +50,7 @@ flowchart LR
 
 ### 1. EMG front-end and amplification
 
-<p align="center">
-  <img src="hardware/final/frontend_and_amplifier.png" width="95%" />
-</p>
+<img width="2042" height="716" alt="hardware_final_1" src="https://github.com/user-attachments/assets/c60a967f-f21f-4310-839a-cf33eb32acac" />
 
 최종 수정 회로에서는 다음의 신호 경로를 사용했습니다.
 
@@ -59,9 +67,7 @@ flowchart LR
 
 ### 2. Rectification, smoothing, and input protection
 
-<p align="center">
-  <img src="hardware/final/rectifier_and_output.png" width="95%" />
-</p>
+<img width="2046" height="724" alt="hardware_final_2" src="https://github.com/user-attachments/assets/44bb8db7-520d-4d1a-9284-4082e5033957" />
 
 - TL084 + `1N4148`을 이용한 **precision half-wave rectifier**
 - `10 kΩ + 10 µF` RC 평활 회로
@@ -139,10 +145,24 @@ OLED I2C address: `0x3C`
 
 ## Prototype Implementation
 
-<p align="center">
-  <img src="media/system_setup_02.jpg" width="48%" />
-  <img src="media/perfboard_front.jpg" width="48%" />
-</p>
+<table>
+  <tr>
+    <td align="center" width="33.3%">
+      <img src="https://github.com/user-attachments/assets/96906ceb-e8f9-4194-905e-081c461c4d9f" alt="system_setup_01" width="100%">
+    </td>
+    <td align="center" width="33.3%">
+      <img src="https://github.com/user-attachments/assets/dc5aa8b4-4733-46b8-bf94-975527bc2a06" alt="system_setup_02" width="100%">
+    </td>
+    <td align="center" width="33.3%">
+      <img src="https://github.com/user-attachments/assets/eb53b4df-1f67-4239-b820-923d13004146" alt="perfboard_front" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Integrated prototype setup</sub></td>
+    <td align="center"><sub>Arduino and analog circuit connection</sub></td>
+    <td align="center"><sub>Front view of the perfboard implementation</sub></td>
+  </tr>
+</table>
 
 회로는 breadboard 단계에서 끝내지 않고 만능기판에 직접 구현하여 Arduino 및 OLED와 통합했습니다. Analog signal acquisition, threshold decision, visual feedback을 하나의 prototype으로 연결한 것이 이 프로젝트의 핵심입니다.
 
@@ -178,8 +198,6 @@ emg-biofeedback-rehabilitation-game/
 - 인체에 전극을 연결한 상태에서는 배터리 구동 및 적절한 전기적 절연을 우선하고, mains-grounded 장비와의 동시 연결에는 별도의 안전 검토가 필요합니다.
 
 ## My Contribution
-
-대학원 포트폴리오에서는 팀 프로젝트였다면 아래 항목을 반드시 본인이 실제 수행한 범위에 맞게 수정해 적는 것을 권장합니다.
 
 - Analog EMG front-end circuit design: `TODO`
 - Circuit simulation / debugging: `TODO`
