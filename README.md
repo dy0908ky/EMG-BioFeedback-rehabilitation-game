@@ -30,6 +30,39 @@
 
 ---
 
+## Demo Videos
+
+실제 EMG 신호 측정과 최종 시스템 동작은 아래 영상에서 확인할 수 있습니다.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://youtu.be/JHu4KMJLgVw">
+        <img src="https://img.youtube.com/vi/JHu4KMJLgVw/hqdefault.jpg" alt="EMG Biofeedback System Demo" width="100%">
+      </a>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://youtu.be/kaiNEoceQHc">
+        <img src="https://img.youtube.com/vi/kaiNEoceQHc/hqdefault.jpg" alt="EMG Oscilloscope Output" width="100%">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>1-Minute Project Summary</b><br>
+      <sub>회로 구현부터 OLED 기반 biofeedback game 동작까지 전체 프로젝트를 약 1분으로 정리한 쇼츠 영상</sub><br><br>
+      <a href="https://youtu.be/JHu4KMJLgVw">▶ Watch Project Demo</a>
+    </td>
+    <td align="center">
+      <b>EMG Signal Observation</b><br>
+      <sub>근수축 시 발생하는 surface EMG signal을 오실로스코프로 관측한 영상</sub><br><br>
+      <a href="https://youtu.be/kaiNEoceQHc">▶ Watch Oscilloscope Output</a>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## Project Highlights
 
 - **Surface EMG analog front-end** 설계 및 만능기판(perfboard) 실제 구현
@@ -286,24 +319,6 @@ return peak * 0.80;
 ```
 
 이 방식은 정식 임상 EMG normalization 기법이라기보다, **사용자 자신의 REF 대비 상대적인 근활성도 변화를 게임 판정에 활용하기 위한 prototype-level heuristic**입니다.
-
----
-
-# Demo Videos
-
-실제 EMG 신호 측정과 최종 시스템 동작은 아래 영상에서 확인할 수 있습니다.
-
-### 1. EMG Signal Observation
-
-근수축 시 발생하는 surface EMG signal을 오실로스코프로 관측한 짧은 영상입니다.
-
-▶ **[Watch EMG oscilloscope output](media/videos/emg%20출력.mp4)**
-
-### 2. 1-Minute Project Summary
-
-회로 구현부터 OLED 기반 biofeedback game 동작까지 전체 프로젝트를 약 1분으로 정리한 영상입니다.
-
-▶ **[Watch 1-minute project summary](media/videos/emg%20쇼츠.mp4)**
 
 ---
 
