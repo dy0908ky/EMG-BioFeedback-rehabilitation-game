@@ -191,11 +191,36 @@ Arduino A0
 
 <img src="hardware/legacy/hardware_initial.jpg" alt="hardware_initial.jpg" width="100%">
 
-> **Note:** `hardware_initial.jpg`은 초기 설계 과정에서 작성한 회로도입니다.  
-> 설계 및 연결 오류를 검토한 뒤 회로를 수정했으며, 최종 prototype은 해당 초기 회로도가 아닌 두 개의 최종 수정 회로도를 기준으로 구현했습니다.
+> **초기 회로 설계안**  
+> `hardware_initial.jpg`은 초기 설계 단계에서 작성한 전체 회로도입니다.  
+> 이후 실제 회로 검토 및 제작 과정에서 일부 연결과 구성상의 문제를 확인하였으며,
+> 최종 prototype은 해당 초기 회로도를 그대로 사용하지 않고
+> `hardware_final_1(1).png`와 `hardware_final_2(1).png`의 수정 회로를 기준으로 구현했습니다.
 
 </details>
 
+<br>
+
+<details>
+<summary><b>Hardware prototyping & debugging iterations</b></summary>
+<br>
+
+<img src="media/hardware_prototyping_iterations.jpg" alt="Hardware prototyping and debugging iterations" width="100%">
+
+> **만능기판 구현 및 디버깅 과정**  
+> 회로도를 실제 만능기판으로 옮기는 과정에서 여러 차례의 prototype을 제작하고
+> 측정 및 debugging을 반복했습니다.
+>
+> 초기 구현에서는 회로 자체의 동작뿐 아니라 **부품 배치, 배선 복잡도, 납땜 신뢰성,
+> 측정 지점 접근성 및 회로 수정의 용이성**과 같은 실제 제작상의 문제도 발생했습니다.
+>
+> 각 prototype에서 확인된 문제를 바탕으로 부품 배치와 배선을 재구성하고,
+> 불필요한 회로 요소를 정리하면서 최종 perfboard 구조를 완성했습니다.
+>
+> 이 과정은 schematic simulation에서 끝나는 것이 아니라,
+> **회로 설계 → 실제 제작 → 측정 → 문제 분석 → 재설계**의 반복적인 hardware debugging 과정으로 진행되었습니다.
+
+</details>
 ---
 
 # Firmware / Biofeedback Logic
