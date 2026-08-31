@@ -2,8 +2,8 @@
 
 > **Surface EMG-based gamified biofeedback system integrating an analog front-end, Arduino Uno, OLED display, and LED feedback**
 
-근활성도(EMG)를 측정하고 사용자의 기준 근수축(reference contraction)과 비교하여, OLED 캐릭터가 계단을 오르내리는 형태로 피드백을 제공하는 **게임형 EMG biofeedback prototype**입니다.  
-단순한 수치 표시 대신 시각적 게임 요소를 적용하여 사용자가 자신의 근수축 수준을 직관적으로 인지할 수 있도록 설계했습니다.
+사용자의 이두박근 근활성도(EMG)를 측정, 사용자의 기준 근수축(reference contraction)과 비교, OLED 캐릭터가 계단을 오르내리는 게임 + LED 불빛으로 피드백을 제공하는 **게임형 EMG biofeedback prototype**입니다.  
+기존의 재활운동들과 차별점을 위해, 단순한 수치 표시 대신 시각적 게임 요소를 적용, 사용자가 자신의 근수축 수준을 직관적으로 인지할 수 있도록 설계했습니다.
 
 ---
 
@@ -32,7 +32,7 @@
 
 ## Project Highlights
 
-- **Surface EMG analog front-end** 설계 및 만능기판(perfboard) 구현
+- **Surface EMG analog front-end** 설계 및 만능기판(perfboard) 실제 구현
 - **AD620 instrumentation amplifier**를 이용한 미세 생체신호 증폭
 - 약 **19.4 Hz high-pass filter**를 통한 저주파 성분 억제
 - **TL084 non-inverting amplifier**를 이용한 추가 증폭
@@ -163,7 +163,7 @@ TL084와 `1N4148` diode를 이용하여 증폭된 bipolar EMG signal을 정류�
 
 초기 설계 단계에서는 AD620, HPF, LPF, buffer, amplifier, rectifier 등을 포함한 전체 회로를 구성했습니다. 이후 회로 검토 및 실제 제작 과정에서 연결과 구성상의 문제를 확인하고 회로를 수정했습니다.
 
-최종 구현에서는 **초기 전체 회로도를 그대로 사용하지 않았으며**, 위의 `hardware_final_1(1).png`와 `hardware_final_2(1).png`를 기준으로 회로를 제작했습니다.
+최종 구현에서는 **초기 전체 회로도를 그대로 사용하지 않았으며**, 위의 `hardware_final_1.png`과 `hardware_final_2.png`를 기준으로 회로를 제작했습니다.
 
 특히 최종 수정안에서는 별도의 LPF와 buffer 단을 제거하고, 다음과 같이 신호 경로를 단순화했습니다.
 
@@ -195,7 +195,7 @@ Arduino A0
 > `hardware_initial.jpg`은 초기 설계 단계에서 작성한 전체 회로도입니다.  
 > 이후 실제 회로 검토 및 제작 과정에서 일부 연결과 구성상의 문제를 확인하였으며,
 > 최종 prototype은 해당 초기 회로도를 그대로 사용하지 않고
-> `hardware_final_1(1).png`와 `hardware_final_2(1).png`의 수정 회로를 기준으로 구현했습니다.
+> `hardware_final_1.png`와 `hardware_final_2.png`의 수정 회로를 기준으로 구현했습니다.
 
 </details>
 
@@ -228,7 +228,7 @@ Arduino A0
 Arduino firmware는 다음 파일에 저장합니다.
 
 ```text
-firmware/emg_biofeedback_game.ino
+firmware/EMG_Biofeedback_game.ino
 ```
 
 ## Game Flow
@@ -387,28 +387,20 @@ emg-biofeedback-rehabilitation-game/
 ├── README.md
 │
 ├── firmware/
-│   └── emg_biofeedback_game.ino
+│   └── EMG_Biofeedback_game.ino
 │
 ├── hardware/
 │   ├── final/
-│   │   ├── hardware_final_1(1).png
-│   │   └── hardware_final_2(1).png
+│   │   ├── hardware_final_1.png
+│   │   └── hardware_final_2.png
 │   │
 │   └── legacy/
 │       └── hardware_initial.jpg
 │
-├── media/
-│   ├── system_setup_01(1).jpg
-│   ├── system_setup_02(1).jpg
-│   ├── Final_perfboard(1).jpg
-│   │
-│   └── videos/
-│       ├── emg 출력.mp4
-│       └── emg 쇼츠.mp4
-│
-└── docs/
-    ├── design_notes.md
-    └── bom.md
+└── media/
+    ├── system_setup_01.jpg
+    ├── system_setup_02.jpg
+    └── Final_perfboard.jpg 
 ```
 
 > 파일명은 실제 업로드한 원본 파일명을 그대로 사용합니다.
@@ -421,7 +413,6 @@ emg-biofeedback-rehabilitation-game/
 - EMG envelope를 Arduino ADC로 입력하므로 raw EMG waveform에 대한 frequency-domain feature extraction은 수행하지 않습니다.
 - electrode placement, 피부 접촉 상태 및 motion artifact에 따라 측정값이 달라질 수 있습니다.
 - 현재 시스템은 single-channel EMG 기반입니다.
-- 본 시스템은 **교육 및 prototype 목적**이며 의료 진단 장비가 아닙니다.
 - 인체 전극을 사용하는 실험에서는 전원 및 측정 장비의 전기적 안전과 절연 조건을 우선적으로 고려해야 합니다.
 
 ---
