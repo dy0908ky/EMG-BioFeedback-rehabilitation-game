@@ -382,7 +382,7 @@ Visual / LED biofeedback
 # Repository Structure
 
 ```text
-emg-biofeedback-rehabilitation-game/
+EMG-BioFeedback-rehabilitation-game/
 │
 ├── README.md
 │
