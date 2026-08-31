@@ -1,7 +1,6 @@
 /*
- * EMG 다마고치 바이오피드백 게임 - 완성본 (REST 제거)
+ * EMG 바이오피드백 게임 - 완성본 (REST 제거)
  * 하드웨어: 아두이노 우노 R3 + 0.96" I2C OLED (0x3C) + LED 2개
- * 배선: OLED SDA->A4, SCL->A5, VCC->5V, GND->GND
  *       EMG(또는 포텐셔미터)->A0 / 빨강LED->D7 / 초록LED->D8 (각 220ohm)
  *
  * 게임: REF 3초 측정 -> 목표치 = REF*0.85
