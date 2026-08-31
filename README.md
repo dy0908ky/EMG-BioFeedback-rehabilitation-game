@@ -12,13 +12,13 @@
 <table>
   <tr>
     <td align="center" width="33.3%">
-      <img src="media/system_setup_01(1).jpg" alt="system_setup_01(1).jpg" width="100%">
+      <img src="media/system_setup_01.jpg" alt="system_setup_01.jpg" width="100%">
     </td>
     <td align="center" width="33.3%">
-      <img src="media/system_setup_02(1).jpg" alt="system_setup_02(1).jpg" width="100%">
+      <img src="media/system_setup_02.jpg" alt="system_setup_02.jpg" width="100%">
     </td>
     <td align="center" width="33.3%">
-      <img src="media/Final_perfboard(1).jpg" alt="Final_perfboard(1).jpg" width="100%">
+      <img src="media/Final_perfboard.jpg" alt="Final_perfboard.jpg" width="100%">
     </td>
   </tr>
   <tr>
@@ -68,10 +68,10 @@ flowchart LR
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="hardware/final/hardware_final_1(1).png" alt="hardware_final_1(1).png" width="100%">
+      <img src="hardware/final/hardware_final_1.png" alt="hardware_final_1.png" width="100%">
     </td>
     <td align="center" width="50%">
-      <img src="hardware/final/hardware_final_2(1).png" alt="hardware_final_2(1).png" width="100%">
+      <img src="hardware/final/hardware_final_2.png" alt="hardware_final_2.png" width="100%">
     </td>
   </tr>
   <tr>
@@ -318,13 +318,13 @@ OLED I2C address: `0x3C`
 <table>
   <tr>
     <td align="center" width="33.3%">
-      <img src="media/system_setup_01(1).jpg" alt="system_setup_01(1).jpg" width="100%">
+      <img src="media/system_setup_01.jpg" alt="system_setup_01.jpg" width="100%">
     </td>
     <td align="center" width="33.3%">
-      <img src="media/system_setup_02(1).jpg" alt="system_setup_02(1).jpg" width="100%">
+      <img src="media/system_setup_02.jpg" alt="system_setup_02.jpg" width="100%">
     </td>
     <td align="center" width="33.3%">
-      <img src="media/Final_perfboard(1).jpg" alt="Final_perfboard(1).jpg" width="100%">
+      <img src="media/Final_perfboard.jpg" alt="Final_perfboard.jpg" width="100%">
     </td>
   </tr>
   <tr>
